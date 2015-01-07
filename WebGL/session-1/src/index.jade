@@ -1,0 +1,89 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title Introduction To WebGl & 3D Graphics 
+
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+
+  body
+
+    article
+
+      section
+        h1 Introduction To WebGl & 3D Graphics 
+        h3 By
+        h2 Aravind Udayashankara
+      section
+        h2 Web GL
+        ul
+          li A new standard for 3D graphics on the Web
+          li WebGL is part of the HTML5 family of technologies.
+          li Allows developers to harness the full power of the computer’s graphics rendering hardware
+          li works on the majority of desktops, as well as a growing number of mobile browsers.
+
+      section
+        h2 Why 3D on Web
+        h3 Making web experience more visually rich and engaging ...
+
+      section
+        h2 WebGL in Technical Context
+        ul
+          li WebGL is an API
+          li WebGL is based on OpenGL ES 2.0
+          li WebGL combines with other web content
+          li WebGL is built for dynamic web applications
+          li WebGL is cross-platform
+          li WebGL is royalty-free
+      section
+        h2 Capsule to Learn Soon
+        ul
+          li There are several open source JavaScript toolkits that take the grunt work out of development
+          li These tools at least  make it possible for mere mortals with modest web development experience to get into the WebGL business
+      section
+        h2 3D Primer
+        ul
+           li Takes place in 3D co-ordinate system
+           li
+      section
+        h2 3D Co-Ordinate System
+        img(src= "http://upload.wikimedia.org/wikipedia/commons/2/2c/3D_coordinate_system.svg")
+        h3 Image from <a href="https://commons.wikimedia.org/wiki/File:3D_coordinate_system.svg"> commons.wikimedia.org </a>
+      section
+        h2 Meshes, Polygons, Vertices
+        h3 The Most Common way to draw 3D graphics is to use Mesh
+        h3 A mesh is an object composed of one or more polygonal shapes
+        h3 Each shape constructed out of vertices (x, y, z triples)
+        h3 Each vertex defines coordinate positions in 3D space
+      section
+        h2 A Sample Mesh
+        img(src= "http://upload.wikimedia.org/wikipedia/commons/8/88/Blender3D_UVTexTut1.png")
+        h3 A Mesh Image from <a href="http://upload.wikimedia.org/wikipedia/commons/8/88/Blender3D_UVTexTut1.png"> commons.wikimedia.org </a>
+      section
+        h2 Transforms and Matrices
+        h3 Transforms are the operations that move  the mesh by a relative amount without having to loop through every vertex, explicitly changing its position.
+        h3 A transform is typically represented by a matrix, a mathematical object containing an array of values used to compute the transformed positions of vertices
+      section
+        h2 Cameras, Perspective, Viewports, and Projections
+        h3 TODO ...
+      section
+        h2 Shaders
+        h3 Chunk of program code that implements algorithms to get the pixels for a mesh onto the screen.
+      section
+        h2 The Anatomy of a WebGL Application
+        ul
+            li Create a canvas element.
+            li Obtain a drawing context for the canvas.
+            li Initialize the viewport.
+            li Create one or more buffers containing the data to be rendered (typically vertices).
+            li Create one or more matrices to define the transformation from vertex buffers to screen space.
+            li Create one or more shaders to implement the drawing algorithm.
+            li Initialize the shaders with parameters.
+            li Draw.
+      section
+        h2 References
+            h4 WebGL: Up and Running -- By Tony Parisi
+            h4 Beginning WebGL for HTML5 -- By Brian Danchilla
+            h4 Wikipedia
+    script(src='build/build.js')
