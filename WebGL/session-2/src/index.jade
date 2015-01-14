@@ -1,0 +1,72 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+        title 3D graphics Primer
+        link(rel='stylesheet', type='text/css', href='build/build.css')
+    body
+        article
+            section
+                h1 3D graphics Primer
+                h4 By
+                h3 Aravind Udayashankara ( aravind666 @ github )
+                h3 aravind.udayashankara@gmail.com
+            section
+                h2 Revision of previous session
+                h2 Any Q's ???
+            section
+                h2 3D Primer
+                ul
+                    li Takes place in 3D co-ordinate system
+                    li
+            section
+                h2 3D Co-Ordinate System
+                img(src= "http://upload.wikimedia.org/wikipedia/commons/2/2c/3D_coordinate_system.svg")
+                h3 Image from <a href="https://commons.wikimedia.org/wiki/File:3D_coordinate_system.svg"> commons.wikimedia.org </a>
+            section
+                h2 Meshes, Polygons, Vertices
+                h3 The Most Common way to draw 3D graphics is to use Mesh
+                h3 A mesh is an object composed of one or more polygonal shapes
+                h3 Each shape constructed out of vertices (x, y, z triples)
+                h3 Each vertex defines coordinate positions in 3D space
+            section
+                h2 A Sample Mesh
+                img(src= "http://upload.wikimedia.org/wikipedia/commons/8/88/Blender3D_UVTexTut1.png")
+                h3 A Mesh Image from <a href="http://upload.wikimedia.org/wikipedia/commons/8/88/Blender3D_UVTexTut1.png"> commons.wikimedia.org </a>
+            section
+                h2 Transforms and Matrices
+                h3 Transforms are the operations that move  the mesh by a relative amount without having to loop through every vertex, explicitly changing its position.
+                h3 A transform is typically represented by a matrix, a mathematical object containing an array of values used to compute the transformed positions of vertices
+            section
+                h2 Cameras
+                h3 3D systems typically use a camera, an object that defines where (relative to the scene) the user is positioned and oriented
+            section
+                h2 Perspective
+                h3 Defines, field of view
+            section
+                h2 Viewport
+                h3 The camera’s properties combine to deliver the final rendered image  of a 3D scene into a 2D viewport defined by the window or canvas.
+            section
+                h2 Camera Perspective and ViewPort
+                img(src= "http://obviam.net/wp-content/uploads/2011/06/graphics_fundamentals_viewport_3dscene.png")
+                h3 Image from <a href="http://obviam.net/index.php/3d-programming-with-android-projections-perspective/" >http://obviam.net/index.php/3d-programming-with-android-projections-perspective/ </a>
+            section
+                h2 Shaders
+                h3 Chunk of program code that implements algorithms to get the pixels for a mesh onto the screen.
+            section
+                h3 Cameras are extremely powerful, as they ultimately define the viewer’s relationship to a 3D scene and provide a sense of realism.
+            section
+                h3 What Next .........
+            section
+                h2 The Anatomy of a WebGL Application
+                ul
+                    li Create a canvas element.
+                    li Obtain a drawing context for the canvas.
+                    li Initialize the viewport.
+                    li Create one or more buffers containing the data to be rendered (typically vertices).
+                    li Create one or more matrices to define the transformation from vertex buffers to screen space.
+                    li Create one or more shaders to implement the drawing algorithm.
+                    li Initialize the shaders with parameters.
+                    li Draw.
+        script(src='build/build.js')
